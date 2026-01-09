@@ -22,8 +22,24 @@ body {
   border: none;
   border-radius: 4px;
   padding: 12.4px 16px;
-  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
   background-color: #30b868;
+  color: rgba(255, 255, 255, 1);
+  transition: 0.3s;
+}
+
+.btn i {
+  margin-left: 8px;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #30b868;
+}
+
+#banner {
+  margin-bottom: 100px;
 }
 
 /* main class */
@@ -50,4 +66,86 @@ body {
   font-weight: 500;
   color: rgb(0, 0, 0, 1);
   text-decoration: none;
+}
+
+.nav-content .nav-link a:hover {
+  color: #30ac66;
+}
+
+#banner {
+  min-height: 100vh;
+  background: url("/assets/banner-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#banner-continer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100%; */
+}
+
+/*  */
+.banner-content {
+  width: 770px;
+  display: flex;
+  margin: 180px 0;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  align-items: center;
+}
+
+.banner-content .banner-logo {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background-color: #fbfbfb;
+}
+
+.banner-content h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.banner-content h1 .color-green {
+  color: #30ac66;
+}
+
+.banner-content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 32px;
+}
+
+.banner-content .btn-b {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.banner-content .btn-1:hover {
+  color: #ffffff;
+}
+
+.banner-content .btn-2 {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  transition: 0.3s;
+}
+
+.banner-content .btn-2:hover {
+  background-color: #30b868;
+  color: #ffffff;
+  border: none;
 }
