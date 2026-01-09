@@ -62,7 +62,8 @@ body {
 }
 
 #banner,
-#notes {
+#notes,
+#brain {
   margin-bottom: 100px;
 }
 
@@ -211,4 +212,60 @@ body {
   font-weight: 400;
   line-height: 20px;
   color: #627382;
+}
+
+.brain-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.brain-content .brain-img img {
+  width: 600px;
+}
+
+.brain-content .brain-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.brain-content .brain-text h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #30b868;
+}
+
+.brain-content .brain-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  font-style: Bold;
+  color: #001931;
+}
+
+.brain-content .brain-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #627382;
+}
+
+.brain-text .text-group {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.brain-text .text-group img {
+  width: 20px;
+}
+
+.brain-text .text-group h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgba(0, 25, 49, 1);
 }
