@@ -104,7 +104,7 @@ body {
 
 #banner {
   padding: 120px 0;
-  background: url("/assets/banner-img.png");
+  background: url("../images/banner-img.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
