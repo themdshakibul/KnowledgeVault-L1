@@ -6,6 +6,10 @@
   font-optical-sizing: auto;
 }
 
+.heiden {
+  display: none;
+}
+
 body {
   background-color: #fbfbfb;
 }
@@ -63,7 +67,8 @@ body {
 
 #banner,
 #notes,
-#brain {
+#brain,
+#ready {
   margin-bottom: 100px;
 }
 
@@ -98,7 +103,7 @@ body {
 }
 
 #banner {
-  min-height: 100vh;
+  padding: 120px 0;
   background: url("/assets/banner-img.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -114,9 +119,9 @@ body {
 
 /*  */
 .banner-content {
-  width: 770px;
+  max-width: 770px;
   display: flex;
-  margin: 180px 0;
+  margin: 120px 0;
   flex-direction: column;
   gap: 16px;
   text-align: center;
@@ -184,10 +189,12 @@ body {
 }
 
 .notes-content .notes-card {
-  max-width: 322px;
+  width: 322px;
+  height: 300px;
   padding: 24px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 16px;
   border-radius: 8px;
@@ -268,4 +275,75 @@ body {
   font-weight: 500;
   line-height: 20px;
   color: rgba(0, 25, 49, 1);
+}
+
+#ready-continer {
+  background: rgba(247, 246, 242, 1);
+  border-radius: 13px;
+  padding: 80px 40px;
+}
+
+#ready-continer .ready-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+#ready-continer .ready-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  color: rgba(0, 25, 49, 1);
+}
+
+#ready-continer .ready-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #627382;
+  margin-bottom: 24px;
+}
+
+#footer {
+  background-color: #001931;
+  color: rgba(250, 250, 250, 1);
+  padding: 120px 0px 30px 0px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.footer-icon h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.footer-icon a {
+  margin-right: 6px;
+}
+
+.footer-content .footer-all {
+  text-align: center;
+  border-top: 2px solid rgba(255, 255, 255, 0.071);
+}
+.footer-all p {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
 }

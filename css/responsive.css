@@ -1,0 +1,89 @@
+@media screen and (max-width: 1200px) {
+  .notes-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .brain-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .notes-content .notes-card {
+    width: 280px;
+  }
+  .brain-content .brain-text {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .nav-link {
+    display: none;
+  }
+
+  .brain-content .brain-img img {
+    width: 550px;
+  }
+}
+
+/* tablet responsive */
+@media screen and (max-width: 768px) {
+  .continer {
+    width: 89%;
+    margin: 0 auto;
+  }
+  .banner-content .btn-b {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .banner-content h1 {
+    font-size: 62px;
+  }
+
+  .notes-content .notes-card {
+    width: 100%;
+  }
+  .header-text {
+    text-align: center;
+  }
+
+  .header-text h1 {
+    font-size: 41px;
+  }
+
+  .brain-content .brain-text h1 {
+    font-size: 41px;
+  }
+
+  .brain-content .brain-img img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .continer {
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .banner-content {
+    margin: 10px 5px;
+  }
+
+  .brain-text .text-group h5 {
+    font-size: 11px;
+  }
+
+  .footer-logo {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .footer-icon {
+    padding-right: 0px;
+  }
+}
